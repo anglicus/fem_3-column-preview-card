@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* colors */
+        /* primary: */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --vdark-cyan: hsl(179, 100%, 13%);
+
+        /* neutral */
+        /* for paragraphs */
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+
+        /* for background, headings, buttons */
+    --vlight-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--trans-white);
+    background-color: var(--vlight-gray);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.025em;
+    color: var(--vlight-gray); 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 88px;
+    margin-bottom: 44px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    padding: 48px;
+    min-height: 442px;
+    box-sizing: border-box;
+}
+
+#sedans {
+    background-color: var(--bright-orange);
+}
+
+#suvs {
+    background-color: var(--dark-cyan);
+}
+
+#luxury {
+    background-color: var(--vdark-cyan) ;
+}
+
+.icon {
+    height: 40px;
+}
+
+p {
+    line-height: 1.67rem;
+}
+
+.learn-more {
+    border-radius: 30px;
+    height: 3.2rem;
+    width: 9.7rem;
+    border: none;
+    background-color: var(--vlight-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    color: var(--trans-white) !important;
+    background-color: transparent;
+    border: 2px solid var(--trans-white);
+}
+
+#learn-sedans {
+    color: var(--bright-orange);
+}
+
+#learn-suvs {
+    color: var(--dark-cyan);
+}
+
+#learn-luxury {
+    color: var(--vdark-cyan);
+}
+
+.attribution {
+    position: relative;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+    margin: 22px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Desktop */
+
+@media screen and (min-width: 800px) {
+
+    main {
+        flex-direction: row;
+        margin-left: 260px;
+        margin-right: 260px;
+        margin-top: 170px;
+    }
+
+    section {
+        min-height: 500px;
+        min-width: 306px;
+    }
+
+    .learn-more {
+        position: absolute;
+        bottom: 48px;
+    }
+}
